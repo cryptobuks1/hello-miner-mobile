@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370CC7AF220361380098EC53 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370CC7AE220361380098EC53 /* Site.swift */; };
 		37551D5722034E9700BF9D16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551D5622034E9700BF9D16 /* AppDelegate.swift */; };
 		37551D5922034E9800BF9D16 /* InitialNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551D5822034E9800BF9D16 /* InitialNavController.swift */; };
 		37551D5C22034E9800BF9D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37551D5A22034E9800BF9D16 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		09EA697F34BE9AB04FEAD0DE /* Pods-miner-mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miner-mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-miner-mobile/Pods-miner-mobile.debug.xcconfig"; sourceTree = "<group>"; };
 		0D7C5FCAC371421F5970E57C /* Pods-miner-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miner-mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-miner-mobile/Pods-miner-mobile.release.xcconfig"; sourceTree = "<group>"; };
 		3700192D18080C896FD95F41 /* Pods-miner-mobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miner-mobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-miner-mobileTests/Pods-miner-mobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+		370CC7AE220361380098EC53 /* Site.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
 		37551D5322034E9700BF9D16 /* miner-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "miner-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37551D5622034E9700BF9D16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37551D5822034E9800BF9D16 /* InitialNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialNavController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		370CC7AD2203612E0098EC53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				370CC7AE220361380098EC53 /* Site.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		37551D4A22034E9700BF9D16 = {
 			isa = PBXGroup;
 			children = (
@@ -137,12 +147,13 @@
 		37551D5522034E9700BF9D16 /* miner-mobile */ = {
 			isa = PBXGroup;
 			children = (
+				370CC7AD2203612E0098EC53 /* Model */,
 				37551D8E22035B6A00BF9D16 /* Segues */,
 				37551D892203514E00BF9D16 /* UI Elements */,
 				37551D8622034FFA00BF9D16 /* Video */,
-				37551D5D22034E9800BF9D16 /* Assets.xcassets */,
 				37551D8522034F2F00BF9D16 /* Views */,
 				37551D8422034F1F00BF9D16 /* Controllers */,
+				37551D5D22034E9800BF9D16 /* Assets.xcassets */,
 				37551D5622034E9700BF9D16 /* AppDelegate.swift */,
 				37551D6222034E9800BF9D16 /* Info.plist */,
 			);
@@ -231,6 +242,7 @@
 				37551D4F22034E9700BF9D16 /* Sources */,
 				37551D5022034E9700BF9D16 /* Frameworks */,
 				37551D5122034E9700BF9D16 /* Resources */,
+				D5BB21FB1DE644767F213FC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -395,6 +407,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D5BB21FB1DE644767F213FC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-miner-mobile/Pods-miner-mobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-miner-mobile/Pods-miner-mobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F3E4DBAA902E7FBBEA697103 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,6 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				370CC7AF220361380098EC53 /* Site.swift in Sources */,
 				37551D8D220357A200BF9D16 /* TitleNav.swift in Sources */,
 				37551D9222035C9F00BF9D16 /* SiteTableController.swift in Sources */,
 				37551D5922034E9800BF9D16 /* InitialNavController.swift in Sources */,
