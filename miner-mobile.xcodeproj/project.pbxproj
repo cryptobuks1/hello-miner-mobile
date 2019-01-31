@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		370CC7AF220361380098EC53 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370CC7AE220361380098EC53 /* Site.swift */; };
+		371408B5220380A300C9699B /* SiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371408B4220380A300C9699B /* SiteView.swift */; };
+		371408B7220387CB00C9699B /* ToRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371408B6220387CB00C9699B /* ToRight.swift */; };
 		37551D5722034E9700BF9D16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551D5622034E9700BF9D16 /* AppDelegate.swift */; };
 		37551D5922034E9800BF9D16 /* InitialNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551D5822034E9800BF9D16 /* InitialNavController.swift */; };
 		37551D5C22034E9800BF9D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37551D5A22034E9800BF9D16 /* Main.storyboard */; };
@@ -47,6 +49,8 @@
 		0D7C5FCAC371421F5970E57C /* Pods-miner-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miner-mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-miner-mobile/Pods-miner-mobile.release.xcconfig"; sourceTree = "<group>"; };
 		3700192D18080C896FD95F41 /* Pods-miner-mobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miner-mobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-miner-mobileTests/Pods-miner-mobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		370CC7AE220361380098EC53 /* Site.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
+		371408B4220380A300C9699B /* SiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteView.swift; sourceTree = "<group>"; };
+		371408B6220387CB00C9699B /* ToRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToRight.swift; sourceTree = "<group>"; };
 		37551D5322034E9700BF9D16 /* miner-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "miner-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37551D5622034E9700BF9D16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37551D5822034E9800BF9D16 /* InitialNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialNavController.swift; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 			children = (
 				37551D5822034E9800BF9D16 /* InitialNavController.swift */,
 				37551D9122035C9F00BF9D16 /* SiteTableController.swift */,
+				371408B4220380A300C9699B /* SiteView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				37551D8F22035B8300BF9D16 /* ToLeft.swift */,
+				371408B6220387CB00C9699B /* ToRight.swift */,
 			);
 			path = Segues;
 			sourceTree = "<group>";
@@ -459,8 +465,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				370CC7AF220361380098EC53 /* Site.swift in Sources */,
+				371408B5220380A300C9699B /* SiteView.swift in Sources */,
 				37551D8D220357A200BF9D16 /* TitleNav.swift in Sources */,
 				37551D9222035C9F00BF9D16 /* SiteTableController.swift in Sources */,
+				371408B7220387CB00C9699B /* ToRight.swift in Sources */,
 				37551D5922034E9800BF9D16 /* InitialNavController.swift in Sources */,
 				37551D8B2203526400BF9D16 /* LoginButton.swift in Sources */,
 				37551D9022035B8300BF9D16 /* ToLeft.swift in Sources */,

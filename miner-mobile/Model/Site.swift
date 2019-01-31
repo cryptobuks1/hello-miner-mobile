@@ -37,6 +37,13 @@ class Site {
     required init(json: [String: Any]) {
         self.id = json["id"] as? Int
         self.name = json["name"] as? String
+        self.site_city__c = json["site_city__c"] as? String
+        self.site_state__c = json["site_state__c"] as? String
+        self.site_country__c = json["site_country__c"] as? String
+        self.site_location__longitude__s = json["site_location__longitude__s"] as? Double
+        self.site_location__latitude__s = json["site_location__latitude__s"] as? Double
+        self.green_initiatives__c = json["green_initiatives__c"] as? String
+        self.site_description__c = json["site_description__c"] as? String
     }
     
     class func endpointForSites() -> String {

@@ -12,9 +12,10 @@ import UIKit
 class SiteTableController: UITableViewController {
     
     var sites: [Site] = []
+    var siteToSend : Site?
     var isLoadingSites = false
     
-    @IBOutlet weak var tableview: UITableView?
+    @IBOutlet var SiteTable: UITableView!
     
     // MARK: Lifecycle
     
@@ -22,7 +23,7 @@ class SiteTableController: UITableViewController {
         super.viewDidLoad()
         
         // place table view below status bar, cuz I think it's prettier that way
-        self.tableview?.contentInset = UIEdgeInsets(top: 20.0, left: 0.0, bottom: 0.0, right: 0.0);
+        SiteTable.contentInset = UIEdgeInsets(top: 20.0, left: 0.0, bottom: 0.0, right: 0.0);
         
         // load up the sites from the API
         self.loadSites()
@@ -38,14 +39,28 @@ class SiteTableController: UITableViewController {
         if sites.count >= indexPath.row {
             let siteToShow = sites[indexPath.row]
             cell.textLabel?.text = siteToShow.name
-            cell.detailTextLabel?.text = siteToShow.site_city__c
+            cell.detailTextLabel?.text = siteToShow.site_description__c
         }
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //
+        
+        //Manually move to detail view
+        siteToSend = sites[indexPath.row]
+        performSegue(withIdentifier: "ViewDetail", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        if (segue.identifier == "ViewDetail") {
+            // initialize new view controller and cast it as your view controller
+            let viewController = segue.destination as! SiteView
+            // your new view controller should have property that will store passed value
+            viewController.site = siteToSend
+        }
     }
     
     func loadSites() {
@@ -67,7 +82,7 @@ class SiteTableController: UITableViewController {
                 
             }
             self.isLoadingSites = false
-            self.tableview?.reloadData()
+            self.SiteTable.reloadData()
         }
         
     }

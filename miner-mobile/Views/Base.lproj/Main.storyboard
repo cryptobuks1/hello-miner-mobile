@@ -28,7 +28,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Explore"/>
                                 <connections>
-                                    <segue destination="MWw-xe-J8m" kind="custom" customClass="ToLeft" customModule="miner_mobile" customModuleProvider="target" id="AMq-Lh-iFK"/>
+                                    <segue destination="RP2-rP-w4G" kind="custom" customClass="ToLeft" customModule="miner_mobile" customModuleProvider="target" id="OhH-AW-caq"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Miner_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="bcB-ya-9Pn">
@@ -58,8 +58,8 @@
         <!--Our Sites-->
         <scene sceneID="RAF-w7-qtd">
             <objects>
-                <tableViewController id="RP2-rP-w4G" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2pN-KP-JUz">
+                <tableViewController id="RP2-rP-w4G" customClass="SiteTableController" customModule="miner_mobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SiteTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2pN-KP-JUz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,31 +91,132 @@
                         </prototypes>
                         <sections/>
                         <connections>
-                            <outlet property="dataSource" destination="RP2-rP-w4G" id="LQI-tj-oXP"/>
-                            <outlet property="delegate" destination="RP2-rP-w4G" id="oxB-qD-hXi"/>
+                            <outlet property="dataSource" destination="RP2-rP-w4G" id="ghR-q3-REs"/>
+                            <outlet property="delegate" destination="RP2-rP-w4G" id="TfQ-qF-Rry"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Our Sites" id="7uA-dr-1hV"/>
+                    <connections>
+                        <outlet property="SiteTable" destination="2pN-KP-JUz" id="fmv-1g-0mg"/>
+                        <segue destination="XGb-F5-JcN" kind="custom" identifier="ViewDetail" customClass="ToLeft" customModule="miner_mobile" customModuleProvider="target" id="WFf-kk-NPH"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2rE-Ma-dhz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3436" y="-87"/>
+            <point key="canvasLocation" x="2695" y="-87"/>
         </scene>
-        <!--Site Table Controller-->
-        <scene sceneID="GUm-I6-FxB">
+        <!--Site View-->
+        <scene sceneID="uVy-59-hNg">
             <objects>
-                <navigationController id="MWw-xe-J8m" customClass="SiteTableController" customModule="miner_mobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GfC-Wr-Tjf">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
+                <viewController id="XGb-F5-JcN" customClass="SiteView" customModule="miner_mobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b63-Wa-7iL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXT-mE-FsR" customClass="LoginButton" customModule="miner_mobile" customModuleProvider="target">
+                                <rect key="frame" x="137.5" y="567" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Fgi-M8-9Xk"/>
+                                    <constraint firstAttribute="width" constant="100" id="NFF-h6-V7J"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="RP2-rP-w4G" kind="custom" customClass="ToRight" customModule="miner_mobile" customModuleProvider="target" id="4mD-Hi-3dw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Name" text="Name" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ted-sA-UPe">
+                                <rect key="frame" x="25" y="37" width="325" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gSw-dD-RbY"/>
+                                    <constraint firstAttribute="width" constant="325" id="rpd-vP-pY9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="City" text="City" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrS-x8-9jw">
+                                <rect key="frame" x="25" y="122" width="325" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="2l7-fY-7x3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="State" text="State" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTi-Dm-CAo">
+                                <rect key="frame" x="25" y="160" width="325" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Ldf-hh-5sE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Country" text="Country" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjx-IA-N2U">
+                                <rect key="frame" x="25" y="203" width="325" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="nPR-4b-uif"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Description" text="Description" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahL-4m-v3Z">
+                                <rect key="frame" x="25" y="307" width="325" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="5G2-Ve-w26"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Green" text="GreenInitiatives" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dym-03-zUC">
+                                <rect key="frame" x="25" y="451" width="325" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="eIp-Zb-XAe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dym-03-zUC" firstAttribute="leading" secondItem="ahL-4m-v3Z" secondAttribute="leading" id="2fU-ih-2PZ"/>
+                            <constraint firstItem="UrS-x8-9jw" firstAttribute="centerX" secondItem="b63-Wa-7iL" secondAttribute="centerX" id="6Du-RV-CfW"/>
+                            <constraint firstItem="jjx-IA-N2U" firstAttribute="centerX" secondItem="b63-Wa-7iL" secondAttribute="centerX" id="6mi-gk-D2E"/>
+                            <constraint firstItem="dym-03-zUC" firstAttribute="trailing" secondItem="ahL-4m-v3Z" secondAttribute="trailing" id="7a4-Px-td7"/>
+                            <constraint firstItem="ahL-4m-v3Z" firstAttribute="width" secondItem="Ted-sA-UPe" secondAttribute="width" id="94e-K0-rNX"/>
+                            <constraint firstItem="EXT-mE-FsR" firstAttribute="centerX" secondItem="b63-Wa-7iL" secondAttribute="centerX" id="DUo-hF-sI0"/>
+                            <constraint firstItem="ahL-4m-v3Z" firstAttribute="centerX" secondItem="b63-Wa-7iL" secondAttribute="centerX" id="GvS-Qo-ZNr"/>
+                            <constraint firstItem="Ted-sA-UPe" firstAttribute="centerX" secondItem="b63-Wa-7iL" secondAttribute="centerX" id="IP8-a8-9Q5"/>
+                            <constraint firstItem="dym-03-zUC" firstAttribute="width" secondItem="Ted-sA-UPe" secondAttribute="width" id="Jeb-hJ-rrs"/>
+                            <constraint firstItem="jjx-IA-N2U" firstAttribute="width" secondItem="Ted-sA-UPe" secondAttribute="width" id="ZOh-Ec-dYr"/>
+                            <constraint firstItem="eTi-Dm-CAo" firstAttribute="centerX" secondItem="b63-Wa-7iL" secondAttribute="centerX" id="ZOs-dv-x0k"/>
+                            <constraint firstItem="EXT-mE-FsR" firstAttribute="top" secondItem="ahL-4m-v3Z" secondAttribute="bottom" constant="124" id="bbV-wV-FHv"/>
+                            <constraint firstItem="UrS-x8-9jw" firstAttribute="top" secondItem="Ted-sA-UPe" secondAttribute="bottom" constant="35" id="c9a-mv-C0T"/>
+                            <constraint firstItem="jjx-IA-N2U" firstAttribute="top" secondItem="UrS-x8-9jw" secondAttribute="bottom" constant="35" id="gim-9m-NZx"/>
+                            <constraint firstItem="eTi-Dm-CAo" firstAttribute="top" secondItem="Ted-sA-UPe" secondAttribute="bottom" constant="73" id="iU6-St-D6t"/>
+                            <constraint firstItem="UrS-x8-9jw" firstAttribute="width" secondItem="Ted-sA-UPe" secondAttribute="width" id="kKD-DD-pww"/>
+                            <constraint firstAttribute="bottom" secondItem="EXT-mE-FsR" secondAttribute="bottom" constant="50" id="oXV-D7-V4y"/>
+                            <constraint firstItem="eTi-Dm-CAo" firstAttribute="width" secondItem="Ted-sA-UPe" secondAttribute="width" id="r3t-JF-Asb"/>
+                            <constraint firstItem="dym-03-zUC" firstAttribute="top" secondItem="ahL-4m-v3Z" secondAttribute="bottom" constant="8" symbolic="YES" id="tYO-LU-Wj1"/>
+                            <constraint firstItem="Ted-sA-UPe" firstAttribute="top" secondItem="mBG-by-zdg" secondAttribute="top" constant="17" id="wxT-aN-NPa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mBG-by-zdg"/>
+                    </view>
                     <connections>
-                        <segue destination="RP2-rP-w4G" kind="relationship" relationship="rootViewController" id="OL5-H6-Att"/>
+                        <outlet property="City" destination="UrS-x8-9jw" id="KV5-Id-7i1"/>
+                        <outlet property="Country" destination="jjx-IA-N2U" id="P18-pd-i5k"/>
+                        <outlet property="Description" destination="ahL-4m-v3Z" id="9B4-8K-UYe"/>
+                        <outlet property="Green" destination="dym-03-zUC" id="NH3-5l-Ryi"/>
+                        <outlet property="Name" destination="Ted-sA-UPe" id="Si9-XP-RWV"/>
+                        <outlet property="State" destination="eTi-Dm-CAo" id="qan-JM-C5g"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1j3-YO-HBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XDb-nu-vE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2620" y="-88"/>
+            <point key="canvasLocation" x="3759.1999999999998" y="-86.806596701649184"/>
         </scene>
         <!--Initial Nav Controller-->
         <scene sceneID="HXI-RN-W4p">
@@ -137,4 +238,7 @@
     <resources>
         <image name="Miner_Logo" width="2500" height="2500"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4mD-Hi-3dw"/>
+    </inferredMetricsTieBreakers>
 </document>
