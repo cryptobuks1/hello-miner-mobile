@@ -9,6 +9,14 @@
 import Foundation
 import UIKit
 
+class HeadlineTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var Name: UILabel!
+    @IBOutlet weak var Location: UILabel!
+    @IBOutlet weak var SlickBackground: UIImageView!
+    
+}
+
 class SiteTableController: UITableViewController {
     
     var sites: [Site] = []
@@ -19,11 +27,18 @@ class SiteTableController: UITableViewController {
     
     // MARK: Lifecycle
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Set styling
+        self.tableView.separatorStyle = .none
+        
         // place table view below status bar, cuz I think it's prettier that way
-        SiteTable.contentInset = UIEdgeInsets(top: 20.0, left: 0.0, bottom: 0.0, right: 0.0);
+        SiteTable.contentInset = UIEdgeInsets(top: -50.0, left: 0.0, bottom: 0.0, right: 0.0);
         
         // load up the sites from the API
         self.loadSites()
@@ -34,15 +49,31 @@ class SiteTableController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! HeadlineTableViewCell
         
         if sites.count >= indexPath.row {
             let siteToShow = sites[indexPath.row]
-            cell.textLabel?.text = siteToShow.name
-            cell.detailTextLabel?.text = siteToShow.site_description__c
+            cell.Name.text = siteToShow.name
+            let hometown =  siteToShow.site_city__c! + ", " + siteToShow.site_state__c!
+            cell.Location.text = hometown
+            
+            let imageName = String(siteToShow.id ?? 1)
+            cell.SlickBackground?.image = UIImage(named: imageName)
         }
         
+        //Hide until we're ready
+        cell.contentView.alpha = 0
+        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        let stagger = 0.5 * Double(indexPath.row)
+        
+        UIView.animate(withDuration: 0.5, delay: stagger, animations: {
+            cell.contentView.alpha = 1
+        })
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

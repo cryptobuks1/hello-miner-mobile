@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Miner_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="OiW-b9-Xn1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man" translatesAutoresizingMaskIntoConstraints="NO" id="OiW-b9-Xn1">
                                 <rect key="frame" x="67.5" y="269.5" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OiW-b9-Xn1" secondAttribute="height" multiplier="15:8" id="79e-aX-49c"/>
@@ -40,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Miner_Logo" width="2500" height="2500"/>
+        <image name="man" width="200" height="200"/>
     </resources>
 </document>

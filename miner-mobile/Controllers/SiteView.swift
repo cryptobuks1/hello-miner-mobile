@@ -19,17 +19,20 @@ class SiteView: UIViewController {
     @IBOutlet weak var Country: UILabel!
     @IBOutlet weak var Description: UILabel!
     @IBOutlet weak var Green: UILabel!
+    @IBOutlet weak var BackgroundImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Fill UI with site details
         self.Name.text = site?.name
-        self.City.text = site?.site_city__c
-        self.State.text = site?.site_state__c
-        self.Country.text = site?.site_country__c
+        self.City.text = site?.site_location_full
         self.Description.text = site?.site_description__c
         self.Green.text = site?.green_initiatives__c
+        
+        let imageName = String(site!.id ?? 1)
+        self.BackgroundImage.image = UIImage(named: imageName)
+        
         
     }
 }
