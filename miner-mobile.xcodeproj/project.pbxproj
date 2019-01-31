@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		37551D5722034E9700BF9D16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551D5622034E9700BF9D16 /* AppDelegate.swift */; };
-		37551D5922034E9800BF9D16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551D5822034E9800BF9D16 /* ViewController.swift */; };
+		37551D5922034E9800BF9D16 /* InitialNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551D5822034E9800BF9D16 /* InitialNavController.swift */; };
 		37551D5C22034E9800BF9D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37551D5A22034E9800BF9D16 /* Main.storyboard */; };
 		37551D5E22034E9800BF9D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37551D5D22034E9800BF9D16 /* Assets.xcassets */; };
 		37551D6122034E9800BF9D16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37551D5F22034E9800BF9D16 /* LaunchScreen.storyboard */; };
 		37551D6C22034E9800BF9D16 /* miner_mobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551D6B22034E9800BF9D16 /* miner_mobileTests.swift */; };
 		37551D7722034E9800BF9D16 /* miner_mobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551D7622034E9800BF9D16 /* miner_mobileUITests.swift */; };
+		37551D882203506A00BF9D16 /* Forest_15_3b_Videvo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 37551D872203506A00BF9D16 /* Forest_15_3b_Videvo.mov */; };
+		37551D8B2203526400BF9D16 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551D8A2203526400BF9D16 /* LoginButton.swift */; };
+		37551D8D220357A200BF9D16 /* TitleNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551D8C220357A200BF9D16 /* TitleNav.swift */; };
+		37551D9022035B8300BF9D16 /* ToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551D8F22035B8300BF9D16 /* ToLeft.swift */; };
+		37551D9222035C9F00BF9D16 /* SiteTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37551D9122035C9F00BF9D16 /* SiteTableController.swift */; };
+		48C5B4E433D5A1F9EED56AD6 /* Pods_miner_mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7616A87FD052A6638E83654D /* Pods_miner_mobile.framework */; };
+		83C2EB2C0696AFC187DEC249 /* Pods_miner_mobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC630677DDEBFEF6E9442AB /* Pods_miner_mobileUITests.framework */; };
+		97CE0A794C9351D0E6242ED2 /* Pods_miner_mobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E017E6387666974DC854C318 /* Pods_miner_mobileTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09EA697F34BE9AB04FEAD0DE /* Pods-miner-mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miner-mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-miner-mobile/Pods-miner-mobile.debug.xcconfig"; sourceTree = "<group>"; };
+		0D7C5FCAC371421F5970E57C /* Pods-miner-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miner-mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-miner-mobile/Pods-miner-mobile.release.xcconfig"; sourceTree = "<group>"; };
+		3700192D18080C896FD95F41 /* Pods-miner-mobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miner-mobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-miner-mobileTests/Pods-miner-mobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		37551D5322034E9700BF9D16 /* miner-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "miner-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37551D5622034E9700BF9D16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37551D5822034E9800BF9D16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37551D5822034E9800BF9D16 /* InitialNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialNavController.swift; sourceTree = "<group>"; };
 		37551D5B22034E9800BF9D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37551D5D22034E9800BF9D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37551D6022034E9800BF9D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +58,17 @@
 		37551D7222034E9800BF9D16 /* miner-mobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "miner-mobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37551D7622034E9800BF9D16 /* miner_mobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miner_mobileUITests.swift; sourceTree = "<group>"; };
 		37551D7822034E9800BF9D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37551D872203506A00BF9D16 /* Forest_15_3b_Videvo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Forest_15_3b_Videvo.mov; sourceTree = "<group>"; };
+		37551D8A2203526400BF9D16 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		37551D8C220357A200BF9D16 /* TitleNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleNav.swift; sourceTree = "<group>"; };
+		37551D8F22035B8300BF9D16 /* ToLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToLeft.swift; sourceTree = "<group>"; };
+		37551D9122035C9F00BF9D16 /* SiteTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteTableController.swift; sourceTree = "<group>"; };
+		6D505F37117F5270074A90D4 /* Pods-miner-mobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miner-mobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-miner-mobileTests/Pods-miner-mobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E6A38BFD0DC533EF4F78D38 /* Pods-miner-mobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miner-mobileUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-miner-mobileUITests/Pods-miner-mobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7616A87FD052A6638E83654D /* Pods_miner_mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_miner_mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB003CC612A979E2480CDA0A /* Pods-miner-mobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miner-mobileUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-miner-mobileUITests/Pods-miner-mobileUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E017E6387666974DC854C318 /* Pods_miner_mobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_miner_mobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC630677DDEBFEF6E9442AB /* Pods_miner_mobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_miner_mobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48C5B4E433D5A1F9EED56AD6 /* Pods_miner_mobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97CE0A794C9351D0E6242ED2 /* Pods_miner_mobileTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +92,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C2EB2C0696AFC187DEC249 /* Pods_miner_mobileUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E156317F85C2DF1363624DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09EA697F34BE9AB04FEAD0DE /* Pods-miner-mobile.debug.xcconfig */,
+				0D7C5FCAC371421F5970E57C /* Pods-miner-mobile.release.xcconfig */,
+				3700192D18080C896FD95F41 /* Pods-miner-mobileTests.debug.xcconfig */,
+				6D505F37117F5270074A90D4 /* Pods-miner-mobileTests.release.xcconfig */,
+				6E6A38BFD0DC533EF4F78D38 /* Pods-miner-mobileUITests.debug.xcconfig */,
+				BB003CC612A979E2480CDA0A /* Pods-miner-mobileUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		37551D4A22034E9700BF9D16 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				37551D6A22034E9800BF9D16 /* miner-mobileTests */,
 				37551D7522034E9800BF9D16 /* miner-mobileUITests */,
 				37551D5422034E9700BF9D16 /* Products */,
+				1E156317F85C2DF1363624DB /* Pods */,
+				6E23889A868566B7716E41F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +137,13 @@
 		37551D5522034E9700BF9D16 /* miner-mobile */ = {
 			isa = PBXGroup;
 			children = (
-				37551D5622034E9700BF9D16 /* AppDelegate.swift */,
-				37551D5822034E9800BF9D16 /* ViewController.swift */,
-				37551D5A22034E9800BF9D16 /* Main.storyboard */,
+				37551D8E22035B6A00BF9D16 /* Segues */,
+				37551D892203514E00BF9D16 /* UI Elements */,
+				37551D8622034FFA00BF9D16 /* Video */,
 				37551D5D22034E9800BF9D16 /* Assets.xcassets */,
-				37551D5F22034E9800BF9D16 /* LaunchScreen.storyboard */,
+				37551D8522034F2F00BF9D16 /* Views */,
+				37551D8422034F1F00BF9D16 /* Controllers */,
+				37551D5622034E9700BF9D16 /* AppDelegate.swift */,
 				37551D6222034E9800BF9D16 /* Info.plist */,
 			);
 			path = "miner-mobile";
@@ -125,6 +167,59 @@
 			path = "miner-mobileUITests";
 			sourceTree = "<group>";
 		};
+		37551D8422034F1F00BF9D16 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				37551D5822034E9800BF9D16 /* InitialNavController.swift */,
+				37551D9122035C9F00BF9D16 /* SiteTableController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		37551D8522034F2F00BF9D16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37551D5A22034E9800BF9D16 /* Main.storyboard */,
+				37551D5F22034E9800BF9D16 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		37551D8622034FFA00BF9D16 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				37551D872203506A00BF9D16 /* Forest_15_3b_Videvo.mov */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		37551D892203514E00BF9D16 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				37551D8A2203526400BF9D16 /* LoginButton.swift */,
+				37551D8C220357A200BF9D16 /* TitleNav.swift */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
+		37551D8E22035B6A00BF9D16 /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				37551D8F22035B8300BF9D16 /* ToLeft.swift */,
+			);
+			path = Segues;
+			sourceTree = "<group>";
+		};
+		6E23889A868566B7716E41F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7616A87FD052A6638E83654D /* Pods_miner_mobile.framework */,
+				E017E6387666974DC854C318 /* Pods_miner_mobileTests.framework */,
+				ECC630677DDEBFEF6E9442AB /* Pods_miner_mobileUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37551D7B22034E9800BF9D16 /* Build configuration list for PBXNativeTarget "miner-mobile" */;
 			buildPhases = (
+				96A7E0DB4D41E1065E2FC21C /* [CP] Check Pods Manifest.lock */,
 				37551D4F22034E9700BF9D16 /* Sources */,
 				37551D5022034E9700BF9D16 /* Frameworks */,
 				37551D5122034E9700BF9D16 /* Resources */,
@@ -149,6 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37551D7E22034E9800BF9D16 /* Build configuration list for PBXNativeTarget "miner-mobileTests" */;
 			buildPhases = (
+				AF0E7D79E1ED94BED3638432 /* [CP] Check Pods Manifest.lock */,
 				37551D6322034E9800BF9D16 /* Sources */,
 				37551D6422034E9800BF9D16 /* Frameworks */,
 				37551D6522034E9800BF9D16 /* Resources */,
@@ -167,6 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37551D8122034E9800BF9D16 /* Build configuration list for PBXNativeTarget "miner-mobileUITests" */;
 			buildPhases = (
+				F3E4DBAA902E7FBBEA697103 /* [CP] Check Pods Manifest.lock */,
 				37551D6E22034E9800BF9D16 /* Sources */,
 				37551D6F22034E9800BF9D16 /* Frameworks */,
 				37551D7022034E9800BF9D16 /* Resources */,
@@ -232,6 +330,7 @@
 				37551D6122034E9800BF9D16 /* LaunchScreen.storyboard in Resources */,
 				37551D5E22034E9800BF9D16 /* Assets.xcassets in Resources */,
 				37551D5C22034E9800BF9D16 /* Main.storyboard in Resources */,
+				37551D882203506A00BF9D16 /* Forest_15_3b_Videvo.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,12 +350,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		96A7E0DB4D41E1065E2FC21C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-miner-mobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF0E7D79E1ED94BED3638432 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-miner-mobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3E4DBAA902E7FBBEA697103 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-miner-mobileUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		37551D4F22034E9700BF9D16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37551D5922034E9800BF9D16 /* ViewController.swift in Sources */,
+				37551D8D220357A200BF9D16 /* TitleNav.swift in Sources */,
+				37551D9222035C9F00BF9D16 /* SiteTableController.swift in Sources */,
+				37551D5922034E9800BF9D16 /* InitialNavController.swift in Sources */,
+				37551D8B2203526400BF9D16 /* LoginButton.swift in Sources */,
+				37551D9022035B8300BF9D16 /* ToLeft.swift in Sources */,
 				37551D5722034E9700BF9D16 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +602,7 @@
 		};
 		37551D7C22034E9800BF9D16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09EA697F34BE9AB04FEAD0DE /* Pods-miner-mobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +621,7 @@
 		};
 		37551D7D22034E9800BF9D16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D7C5FCAC371421F5970E57C /* Pods-miner-mobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +640,7 @@
 		};
 		37551D7F22034E9800BF9D16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3700192D18080C896FD95F41 /* Pods-miner-mobileTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +662,7 @@
 		};
 		37551D8022034E9800BF9D16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D505F37117F5270074A90D4 /* Pods-miner-mobileTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +684,7 @@
 		};
 		37551D8222034E9800BF9D16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6A38BFD0DC533EF4F78D38 /* Pods-miner-mobileUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +705,7 @@
 		};
 		37551D8322034E9800BF9D16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB003CC612A979E2480CDA0A /* Pods-miner-mobileUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
