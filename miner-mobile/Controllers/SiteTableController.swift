@@ -38,7 +38,7 @@ class SiteTableController: UITableViewController {
         self.tableView.separatorStyle = .none
         
         // place table view below status bar, cuz I think it's prettier that way
-        SiteTable.contentInset = UIEdgeInsets(top: -50.0, left: 0.0, bottom: 0.0, right: 0.0);
+        SiteTable.contentInset = UIEdgeInsets(top: 0, left: 0.0, bottom: 0.0, right: 0.0);
         
         // load up the sites from the API
         self.loadSites()
