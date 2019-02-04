@@ -14,7 +14,7 @@ In order to make this work for your use case, you'll need to modify a few things
 
 1. The `Model` folder contains a single class, "Site", which represents the object and object details you want to display. You'll need to modify that class to represent both the data model of your desired object from Heroku / API as well the path to the API itself, which is declared towards the top of that class.
 
-2. The `Controller` folder contains a class called `SiteTableController`, which deals with the table draws relating to the site itself.
+2. The `Controller` folder contains a class called `SiteTableController`, which deals with the table draws relating to the site itself. You may (read: will likely) need to modify this behaviour based on how you modify the `Site` object.
 
 3. The video in the `Video` folder is called from the `InitialNavController` controller. You can either swap out the video and keep the same code or update both the video and that controller to make the splash screen reflect your desired gorgeousness.
 
