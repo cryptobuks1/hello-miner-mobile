@@ -18,7 +18,11 @@ In order to make this work for your use case, you'll need to modify a few things
 
 3. The video in the `Video` folder is called from the `InitialNavController` controller. You can either swap out the video and keep the same code or update both the video and that controller to make the splash screen reflect your desired gorgeousness.
 
-4. The `XCASSETS` folder has the pictures used as table backgrounds. Swapping those out while keeping the same asset name will allow you to update your table.
+4. The `XCASSETS` folder has the pictures used as table backgrounds as well as the main splash loading icon. Swapping those out while keeping the same asset name will allow you to update your table.
+
+# Screenshots Or It Didn't Happen
+
+<img src="https://i.imgur.com/7wZ5kcy.png" width="200" /><img src="https://i.imgur.com/HlfoKVn.png" width="200" /><img src="https://i.imgur.com/W5jzTct.png" width="200" /><img src="https://i.imgur.com/TLSQgat.png" width="200" />
 
 # Forks, etc.
 
